@@ -62,3 +62,30 @@ package = true
 pythonpath = [
   ".", "src",
 ]
+
+[tool.commitizen]
+config="pyproject.toml"
+tag_format = "v$major.$minor.$patch$prerelease"
+version_provider = "pep621"
+legacy_tag_formats = [
+    "${version}",
+    "myproject-$version",
+]
+ignored_tag_formats = [
+    "stable",
+    "component-*",
+    "env/*",
+    "v${major}.${minor}",
+]
+version_files = [
+    "pyproject.toml:version",
+]
+pre_bump_hooks = [
+  "powershell -File ./build.ps1",
+  "git add .",
+]
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.13.7",
+]
