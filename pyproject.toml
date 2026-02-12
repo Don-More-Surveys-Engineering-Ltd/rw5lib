@@ -1,6 +1,6 @@
 [project]
 name = "rw5lib"
-version = "0.1.0"
+version = "0.1.2"
 description = "Extract data from the raw field controller format RW5."
 readme = "README.md"
 authors = [
@@ -79,10 +79,6 @@ ignored_tag_formats = [
 ]
 version_files = [
     "pyproject.toml:version",
-]
-pre_bump_hooks = [
-  "powershell -File ./build.ps1",
-  "git add .",
 ]
 
 [dependency-groups]
