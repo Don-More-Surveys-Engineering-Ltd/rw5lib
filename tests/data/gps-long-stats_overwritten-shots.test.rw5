@@ -1,0 +1,793 @@
+JB,NM21320TH230815,DT08-15-2023,TM14:47:56
+MO,AD0,UN1,SF1.00000000,EC0,EO0.0,AU0
+--SurvPC Version 6.08
+--CRD: Alphanumeric
+--User Defined: CANADA/NAD83/New Brunswick
+--Equipment:   Carlson,  BRx7, SN:D2132624903183, FW:6.0Aa02a,1.18,0.53.210623
+--Localization File: None
+--Geoid Separation File: None
+--Grid Adjustment File: None
+--GPS Scale: 1.00000000
+--Scale Point not used
+--Base Configuration by Reading GPS Position
+--DT08-15-2023
+--TM14:47:56
+--Entered Base HR: 1.9360 m, Vertical
+--Antenna Type: [BRX7 Internal],RA0.0785m,SHMP0.0547m,L10.0701m,L20.0629m,--L1/L2/L5 Internal Antenna
+BP,PN100_BASE_1,LA45.044059327777,LN-67.024525258947,EL-1.2259,AG1.9360,PA0.0701,ATAPC,SRBASE,--
+--GS,PN100_BASE_1,N 7342094.9277,E 2457012.9935,EL-3.2320,--Base
+--GT,PN100_BASE_1,SW2275,ST236850000,EW2275,ET236850000
+--GPS Log File: 21320TH230815.bin base open Carlson,BRx7
+--GNSSLOGRCVR,FL21320TH230815.bin,SRBASE,RND2132624903183,RMHEMBRx7,RF6.0Aa02a,1.18,0.53.210623
+--GNSSLOGANT,FL21320TH230815.bin,AN,AMBRX7 Internal,LI30000,AG2.000,PA0.070
+--Antenna Type: [BRX7 Internal],RA0.0785m,SHMP0.0547m,L10.0701m,L20.0629m,--L1/L2/L5 Internal Antenna
+--RTK Method: Auto, Device: Internal Radio
+--Entered Rover HR: 2.0000 m, Vertical
+LS,HR2.0701
+GPS,PN6033,LA45.043940315810,LN-67.025143110029,EL-6.346239,--MON/2345 HERE
+--GS,PN6033,N 7342059.1108,E 2456877.5971,EL-8.4163,--MON/2345 HERE
+--GT,PN6033,SW2275,ST237308500,EW2275,ET237317499
+--Valid Readings: 10 of 10
+--Fixed Readings: 10 of 10
+--Nor Min: 7342059.1089  Max: 7342059.1135
+--Eas Min: 2456877.5953  Max: 2456877.6000
+--Elv Min: -8.4200  Max: -8.4124
+--Nor Avg: 7342059.1108  SD: 0.0012
+--Eas Avg: 2456877.5971  SD: 0.0017
+--Elv Avg: -8.4163  SD: 0.0023
+--HRMS Avg: 0.0058 SD: 0.0001 Min: 0.0057 Max: 0.0060
+--VRMS Avg: 0.0112 SD: 0.0002 Min: 0.0108 Max: 0.0116
+--HDOP Avg: 0.5179  Min: 0.5179 Max: 0.5179
+--VDOP Avg: 0.6908 Min: 0.6905 Max: 0.6911
+--PDOP Avg: 0.8633 Min: 0.8631 Max: 0.8636
+--AGE Avg: 1.1000 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 26 Min: 26 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.608,Right 0.000,-0+00.608,Right 0.572,0.000,-8.416,,8.416,
+--CTSD1:MON/2345 HERE,6033,7342059.111,2456877.597,0.572,0.000,,,,,,
+--HRMS:0.006, VRMS:0.011, STATUS:FIXED, SATS:26, AGE:1.0, PDOP:0.864, HDOP:0.518, VDOP:0.691, TDOP:0.454, GDOP:0.975
+--Localization File: H:\Shared drives\Projects\2021\21320 - Rodney Lagace - Victoria Terrace, St. Andrews\FieldRecords\21320TH230815\21320TH230815.loc
+--Number of Localization Points Used: 1
+--Localization Azimuth: State Plane Grid
+--GPS Scale Point N:7342058.50300000 E:2456878.16900000
+GPS,PN6034,LA45.043940314907,LN-67.025143106906,EL-6.346716,--MON/2345
+--GS,PN6034,N 7342058.5043,E 2456878.1686,EL-0.0004,--MON/2345
+--GT,PN6034,SW2275,ST237357000,EW2275,ET237366000
+--Valid Readings: 10 of 10
+--Fixed Readings: 10 of 10
+--Nor Min: 7342058.5025  Max: 7342058.5066
+--Eas Min: 2456878.1674  Max: 2456878.1704
+--Elv Min: -0.0046  Max: 0.0065
+--Nor Avg: 7342058.5043  SD: 0.0016
+--Eas Avg: 2456878.1686  SD: 0.0009
+--Elv Avg: -0.0004  SD: 0.0036
+--HRMS Avg: 0.0064 SD: 0.0001 Min: 0.0063 Max: 0.0065
+--VRMS Avg: 0.0119 SD: 0.0004 Min: 0.0113 Max: 0.0125
+--HDOP Avg: 0.5163  Min: 0.5151 Max: 0.5268
+--VDOP Avg: 0.6922 Min: 0.6898 Max: 0.7124
+--PDOP Avg: 0.8635 Min: 0.8609 Max: 0.8860
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 28
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.001,Right 0.000,-0+00.001,Right 0.000,0.000,-0.000,,0.000,
+--CTSD1:MON/2345,6034,7342058.504,2456878.169,0.000,0.000,,,,,,
+--HRMS:0.006, VRMS:0.012, STATUS:FIXED, SATS:27, AGE:2.0, PDOP:0.886, HDOP:0.527, VDOP:0.712, TDOP:0.469, GDOP:1.002
+GPS,PN6035,LA45.043940321046,LN-67.025143116158,EL-6.349064,--MON/2345
+--GS,PN6035,N 7342058.5062,E 2456878.1666,EL-0.0027,--MON/2345
+--GT,PN6035,SW2275,ST237375000,EW2275,ET237384000
+--Valid Readings: 10 of 10
+--Fixed Readings: 10 of 10
+--Nor Min: 7342058.5044  Max: 7342058.5098
+--Eas Min: 2456878.1651  Max: 2456878.1689
+--Elv Min: -0.0072  Max: 0.0003
+--Nor Avg: 7342058.5062  SD: 0.0015
+--Eas Avg: 2456878.1666  SD: 0.0011
+--Elv Avg: -0.0027  SD: 0.0021
+--HRMS Avg: 0.0063 SD: 0.0001 Min: 0.0062 Max: 0.0065
+--VRMS Avg: 0.0108 SD: 0.0002 Min: 0.0105 Max: 0.0113
+--HDOP Avg: 0.5268  Min: 0.5268 Max: 0.5268
+--VDOP Avg: 0.7131 Min: 0.7129 Max: 0.7134
+--PDOP Avg: 0.8866 Min: 0.8864 Max: 0.8868
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 27
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.003,Right 0.000,-0+00.003,Right 0.002,0.000,-0.003,,0.003,
+--CTSD1:MON/2345,6035,7342058.506,2456878.167,0.002,0.000,,,,,,
+--HRMS:0.006, VRMS:0.011, STATUS:FIXED, SATS:27, AGE:2.0, PDOP:0.887, HDOP:0.527, VDOP:0.713, TDOP:0.469, GDOP:1.003
+GPS,PN6036,LA45.043940311799,LN-67.025143119787,EL-6.349751,--MON/2345
+--GS,PN6036,N 7342058.5034,E 2456878.1658,EL-0.0034,--MON/2345
+--GT,PN6036,SW2275,ST237392500,EW2275,ET237401500
+--Valid Readings: 10 of 10
+--Fixed Readings: 10 of 10
+--Nor Min: 7342058.5005  Max: 7342058.5057
+--Eas Min: 2456878.1646  Max: 2456878.1669
+--Elv Min: -0.0094  Max: 0.0007
+--Nor Avg: 7342058.5034  SD: 0.0012
+--Eas Avg: 2456878.1658  SD: 0.0008
+--Elv Avg: -0.0034  SD: 0.0032
+--HRMS Avg: 0.0057 SD: 0.0001 Min: 0.0055 Max: 0.0060
+--VRMS Avg: 0.0099 SD: 0.0002 Min: 0.0096 Max: 0.0105
+--HDOP Avg: 0.5251  Min: 0.5094 Max: 0.5268
+--VDOP Avg: 0.7118 Min: 0.6909 Max: 0.7143
+--PDOP Avg: 0.8845 Min: 0.8584 Max: 0.8876
+--AGE Avg: 1.3000 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 28
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.000,Right 0.000,0+00.000,Right 0.003,0.000,-0.003,,0.003,
+--CTSD1:MON/2345,6036,7342058.503,2456878.166,0.003,0.000,,,,,,
+--HRMS:0.006, VRMS:0.010, STATUS:FIXED, SATS:27, AGE:2.0, PDOP:0.888, HDOP:0.527, VDOP:0.714, TDOP:0.470, GDOP:1.004
+GPS,PN6037,LA45.043940317676,LN-67.025143109091,EL-6.347323,--MON/2345
+--GS,PN6037,N 7342058.5051,E 2456878.1682,EL-0.0010,--MON/2345
+--GT,PN6037,SW2275,ST237410000,EW2275,ET237419000
+--Valid Readings: 10 of 10
+--Fixed Readings: 10 of 10
+--Nor Min: 7342058.5041  Max: 7342058.5066
+--Eas Min: 2456878.1663  Max: 2456878.1692
+--Elv Min: -0.0051  Max: 0.0018
+--Nor Avg: 7342058.5051  SD: 0.0008
+--Eas Avg: 2456878.1682  SD: 0.0008
+--Elv Avg: -0.0010  SD: 0.0019
+--HRMS Avg: 0.0064 SD: 0.0001 Min: 0.0062 Max: 0.0065
+--VRMS Avg: 0.0115 SD: 0.0002 Min: 0.0111 Max: 0.0117
+--HDOP Avg: 0.5268  Min: 0.5268 Max: 0.5269
+--VDOP Avg: 0.7150 Min: 0.7148 Max: 0.7153
+--PDOP Avg: 0.8882 Min: 0.8880 Max: 0.8884
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 27
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.002,Right 0.000,-0+00.002,Right 0.001,0.000,-0.001,,0.001,
+--CTSD1:MON/2345,6037,7342058.505,2456878.168,0.001,0.000,,,,,,
+--HRMS:0.006, VRMS:0.011, STATUS:FIXED, SATS:27, AGE:2.0, PDOP:0.888, HDOP:0.527, VDOP:0.715, TDOP:0.470, GDOP:1.005
+SP,PN81,N 7342079.7860,E 2456962.0427,EL0.0000,--
+SP,PN5600,N 7342059.1108,E 2456877.5971,EL-8.4163,--MON/2345 HERE
+SP,PN5601,N 7342058.5043,E 2456878.1686,EL-0.0004,--MON/2345
+SP,PN5602,N 7342058.5062,E 2456878.1666,EL-0.0027,--MON/2345
+SP,PN5603,N 7342058.5034,E 2456878.1658,EL-0.0034,--MON/2345
+SP,PN5604,N 7342058.5051,E 2456878.1682,EL-0.0010,--MON/2345
+GPS,PN5605,LA45.044119758992,LN-67.024565686988,EL-1.148695,--SMFD/DMSE 2022
+--GS,PN5605,N 7342113.0382,E 2457004.8489,EL5.1977,--SMFD/DMSE 2022
+--GT,PN5605,SW2275,ST238022500,EW2275,ET238024500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342113.0360  Max: 7342113.0397
+--Eas Min: 2457004.8485  Max: 2457004.8493
+--Elv Min: 5.1972  Max: 5.1986
+--Nor Avg: 7342113.0382  SD: 0.0016
+--Eas Avg: 2457004.8489  SD: 0.0003
+--Elv Avg: 5.1977  SD: 0.0007
+--HRMS Avg: 0.0057 SD: 0.0000 Min: 0.0057 Max: 0.0057
+--VRMS Avg: 0.0097 SD: 0.0001 Min: 0.0095 Max: 0.0098
+--HDOP Avg: 0.5019  Min: 0.5019 Max: 0.5019
+--VDOP Avg: 0.6963 Min: 0.6962 Max: 0.6963
+--PDOP Avg: 0.8583 Min: 0.8583 Max: 0.8583
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 28 Min: 28 Max: 28
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.012,Right 0.000,0+00.012,Left 0.002,0.000,5.198,5.198,,
+--CTSD1:SMFD/DMSE 2022,5605,7342113.038,2457004.849,-0.001,0.001,,,,,,
+--HRMS:0.006, VRMS:0.010, STATUS:FIXED, SATS:28, AGE:2.0, PDOP:0.858, HDOP:0.502, VDOP:0.696, TDOP:0.444, GDOP:0.966
+GPS,PN5606,LA45.044119770123,LN-67.024565664405,EL-0.719245,--SMFD/DMSE 2022
+--GS,PN5606,N 7342113.0416,E 2457004.8539,EL5.6271,--SMFD/DMSE 2022
+--GT,PN5606,SW2275,ST238053499,EW2275,ET238055499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342113.0388  Max: 7342113.0467
+--Eas Min: 2457004.8532  Max: 2457004.8543
+--Elv Min: 5.6264  Max: 5.6280
+--Nor Avg: 7342113.0416  SD: 0.0036
+--Eas Avg: 2457004.8539  SD: 0.0005
+--Elv Avg: 5.6271  SD: 0.0007
+--HRMS Avg: 0.0055 SD: 0.0003 Min: 0.0053 Max: 0.0059
+--VRMS Avg: 0.0093 SD: 0.0004 Min: 0.0090 Max: 0.0100
+--HDOP Avg: 0.5019  Min: 0.5019 Max: 0.5019
+--VDOP Avg: 0.6969 Min: 0.6969 Max: 0.6969
+--PDOP Avg: 0.8588 Min: 0.8588 Max: 0.8589
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 29 Min: 29 Max: 29
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.006,Right 0.000,0+00.006,Left 0.004,0.000,5.627,5.627,,
+--CTSD1:SMFD/DMSE 2022,5606,7342113.042,2457004.854,-0.003,0.002,,,,,,
+--HRMS:0.005, VRMS:0.009, STATUS:FIXED, SATS:29, AGE:1.0, PDOP:0.859, HDOP:0.502, VDOP:0.697, TDOP:0.444, GDOP:0.967
+GPS,PN5605,LA45.044119777317,LN-67.024565664575,EL-0.912974,--SMFD/DMSE 2022
+--GS,PN5605,N 7342113.0438,E 2457004.8538,EL5.4334,--SMFD/DMSE 2022
+--GT,PN5605,SW2275,ST238074500,EW2275,ET238076500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342113.0425  Max: 7342113.0454
+--Eas Min: 2457004.8529  Max: 2457004.8555
+--Elv Min: 5.4302  Max: 5.4357
+--Nor Avg: 7342113.0438  SD: 0.0012
+--Eas Avg: 2457004.8538  SD: 0.0012
+--Elv Avg: 5.4334  SD: 0.0023
+--HRMS Avg: 0.0055 SD: 0.0000 Min: 0.0055 Max: 0.0055
+--VRMS Avg: 0.0092 SD: 0.0000 Min: 0.0091 Max: 0.0092
+--HDOP Avg: 0.5019  Min: 0.5019 Max: 0.5019
+--VDOP Avg: 0.6973 Min: 0.6972 Max: 0.6973
+--PDOP Avg: 0.8592 Min: 0.8591 Max: 0.8592
+--AGE Avg: 1.6667 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 29 Min: 29 Max: 29
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.004,Right 0.000,0+00.004,Left 0.003,0.000,5.433,5.433,,
+--CTSD1:SMFD/DMSE 2022,5605,7342113.044,2457004.854,-0.002,0.001,,,,,,
+--HRMS:0.005, VRMS:0.009, STATUS:FIXED, SATS:29, AGE:2.0, PDOP:0.859, HDOP:0.502, VDOP:0.697, TDOP:0.444, GDOP:0.967
+SP,PN1,N 7342101.5510,E 2456975.8540,EL0.0000,--CALC
+GPS,PN5607,LA45.043981386629,LN-67.024694463485,EL-4.268148,--SMFD/DMSE 2022
+--GS,PN5607,N 7342070.5124,E 2456976.3892,EL2.0782,--SMFD/DMSE 2022
+--GT,PN5607,SW2275,ST238605500,EW2275,ET238607499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342070.5089  Max: 7342070.5145
+--Eas Min: 2456976.3884  Max: 2456976.3901
+--Elv Min: 2.0751  Max: 2.0830
+--Nor Avg: 7342070.5124  SD: 0.0025
+--Eas Avg: 2456976.3892  SD: 0.0007
+--Elv Avg: 2.0782  SD: 0.0034
+--HRMS Avg: 0.0131 SD: 0.0002 Min: 0.0130 Max: 0.0133
+--VRMS Avg: 0.0141 SD: 0.0002 Min: 0.0139 Max: 0.0144
+--HDOP Avg: 0.5664  Min: 0.5569 Max: 0.5853
+--VDOP Avg: 0.7749 Min: 0.7626 Max: 0.7994
+--PDOP Avg: 0.9598 Min: 0.9443 Max: 0.9907
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 24 Min: 24 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.890,Right 0.000,-0+00.890,Left 0.010,0.000,2.078,2.078,,
+--CTSD1:SMFD/DMSE 2022,5607,7342070.512,2456976.389,-0.005,-0.008,,,,,,
+--HRMS:0.013, VRMS:0.014, STATUS:FIXED, SATS:25, AGE:1.0, PDOP:0.944, HDOP:0.557, VDOP:0.763, TDOP:0.508, GDOP:1.072
+GPS,PN5608,LA45.043981415053,LN-67.024694475125,EL-3.808714,--SMFD/DMSE 2022
+--GS,PN5608,N 7342070.5212,E 2456976.3867,EL2.5376,--SMFD/DMSE 2022
+--GT,PN5608,SW2275,ST238633499,EW2275,ET238635500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342070.5189  Max: 7342070.5230
+--Eas Min: 2456976.3851  Max: 2456976.3882
+--Elv Min: 2.5301  Max: 2.5438
+--Nor Avg: 7342070.5212  SD: 0.0017
+--Eas Avg: 2456976.3867  SD: 0.0013
+--Elv Avg: 2.5376  SD: 0.0057
+--HRMS Avg: 0.0143 SD: 0.0001 Min: 0.0142 Max: 0.0145
+--VRMS Avg: 0.0183 SD: 0.0003 Min: 0.0178 Max: 0.0186
+--HDOP Avg: 0.5778  Min: 0.5778 Max: 0.5778
+--VDOP Avg: 0.7897 Min: 0.7897 Max: 0.7897
+--PDOP Avg: 0.9786 Min: 0.9786 Max: 0.9786
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 22 Min: 22 Max: 23
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.897,Right 0.000,-0+00.897,Left 0.016,0.000,2.538,2.538,,
+--CTSD1:SMFD/DMSE 2022,5608,7342070.521,2456976.387,-0.009,-0.013,,,,,,
+--HRMS:0.014, VRMS:0.018, STATUS:FIXED, SATS:23, AGE:1.0, PDOP:0.979, HDOP:0.578, VDOP:0.790, TDOP:0.530, GDOP:1.113
+GPS,PN5609,LA45.044011177812,LN-67.024760380121,EL-3.532616,--SMFD/DMSE 2023
+--GS,PN5609,N 7342079.8081,E 2456962.0339,EL2.8137,--SMFD/DMSE 2023
+--GT,PN5609,SW2275,ST238713000,EW2275,ET238715000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342079.8078  Max: 7342079.8085
+--Eas Min: 2456962.0320  Max: 2456962.0349
+--Elv Min: 2.8103  Max: 2.8182
+--Nor Avg: 7342079.8081  SD: 0.0003
+--Eas Avg: 2456962.0339  SD: 0.0013
+--Elv Avg: 2.8137  SD: 0.0033
+--HRMS Avg: 0.0065 SD: 0.0000 Min: 0.0065 Max: 0.0065
+--VRMS Avg: 0.0106 SD: 0.0000 Min: 0.0106 Max: 0.0107
+--HDOP Avg: 0.5192  Min: 0.5192 Max: 0.5192
+--VDOP Avg: 0.7569 Min: 0.7569 Max: 0.7569
+--PDOP Avg: 0.9179 Min: 0.9179 Max: 0.9179
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 26 Min: 26 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.019,Right 0.000,-0+00.019,Left 0.014,0.000,2.814,2.814,,
+--CTSD1:SMFD/DMSE 2023,5609,7342079.808,2456962.034,-0.007,-0.012,,,,,,
+--HRMS:0.006, VRMS:0.011, STATUS:FIXED, SATS:26, AGE:2.0, PDOP:0.918, HDOP:0.519, VDOP:0.757, TDOP:0.493, GDOP:1.042
+GPS,PN5610,LA45.044011173484,LN-67.024760378287,EL-3.202968,--SMFD/DMSE 2023
+--GS,PN5610,N 7342079.8067,E 2456962.0343,EL3.1434,--SMFD/DMSE 2023
+--GT,PN5610,SW2275,ST238729499,EW2275,ET238731500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342079.8062  Max: 7342079.8072
+--Eas Min: 2456962.0334  Max: 2456962.0355
+--Elv Min: 3.1418  Max: 3.1464
+--Nor Avg: 7342079.8067  SD: 0.0004
+--Eas Avg: 2456962.0343  SD: 0.0009
+--Elv Avg: 3.1434  SD: 0.0021
+--HRMS Avg: 0.0061 SD: 0.0003 Min: 0.0059 Max: 0.0065
+--VRMS Avg: 0.0099 SD: 0.0005 Min: 0.0095 Max: 0.0105
+--HDOP Avg: 0.5192  Min: 0.5192 Max: 0.5192
+--VDOP Avg: 0.7579 Min: 0.7579 Max: 0.7580
+--PDOP Avg: 0.9187 Min: 0.9186 Max: 0.9188
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 26 Min: 26 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.018,Right 0.000,-0+00.018,Left 0.013,0.000,3.143,3.143,,
+--CTSD1:SMFD/DMSE 2023,5610,7342079.807,2456962.034,-0.007,-0.011,,,,,,
+--HRMS:0.006, VRMS:0.010, STATUS:FIXED, SATS:26, AGE:1.0, PDOP:0.919, HDOP:0.519, VDOP:0.758, TDOP:0.494, GDOP:1.043
+GPS,PN5611,LA45.044043148749,LN-67.024831229544,EL-2.813682,--SMFD/2023
+--GS,PN5611,N 7342089.7841,E 2456946.6042,EL3.5327,--SMFD/2023
+--GT,PN5611,SW2275,ST238789000,EW2275,ET238791000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342089.7805  Max: 7342089.7861
+--Eas Min: 2456946.6028  Max: 2456946.6056
+--Elv Min: 3.5300  Max: 3.5367
+--Nor Avg: 7342089.7841  SD: 0.0026
+--Eas Avg: 2456946.6042  SD: 0.0012
+--Elv Avg: 3.5327  SD: 0.0029
+--HRMS Avg: 0.0069 SD: 0.0001 Min: 0.0067 Max: 0.0070
+--VRMS Avg: 0.0114 SD: 0.0003 Min: 0.0110 Max: 0.0116
+--HDOP Avg: 0.5368  Min: 0.5098 Max: 0.5503
+--VDOP Avg: 0.7978 Min: 0.7466 Max: 0.8234
+--PDOP Avg: 0.9616 Min: 0.9040 Max: 0.9904
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 26 Min: 26 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.019,Right 0.000,-0+00.019,Left 0.006,0.000,3.533,3.533,,
+--CTSD1:SMFD/2023,5611,7342089.784,2456946.604,-0.003,-0.005,,,,,,
+--HRMS:0.007, VRMS:0.011, STATUS:FIXED, SATS:26, AGE:2.0, PDOP:0.904, HDOP:0.510, VDOP:0.747, TDOP:0.481, GDOP:1.024
+GPS,PN5612,LA45.044043147607,LN-67.024831229743,EL-2.284460,--SMFD/2023
+--GS,PN5612,N 7342089.7838,E 2456946.6042,EL4.0619,--SMFD/2023
+--GT,PN5612,SW2275,ST238808000,EW2275,ET238809499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342089.7823  Max: 7342089.7856
+--Eas Min: 2456946.6032  Max: 2456946.6053
+--Elv Min: 4.0609  Max: 4.0627
+--Nor Avg: 7342089.7838  SD: 0.0013
+--Eas Avg: 2456946.6042  SD: 0.0009
+--Elv Avg: 4.0619  SD: 0.0007
+--HRMS Avg: 0.0066 SD: 0.0003 Min: 0.0062 Max: 0.0068
+--VRMS Avg: 0.0108 SD: 0.0005 Min: 0.0101 Max: 0.0111
+--HDOP Avg: 0.5098  Min: 0.5098 Max: 0.5098
+--VDOP Avg: 0.7477 Min: 0.7477 Max: 0.7477
+--PDOP Avg: 0.9050 Min: 0.9050 Max: 0.9050
+--AGE Avg: 1.6667 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 27
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,-0+00.019,Right 0.000,-0+00.019,Left 0.005,0.000,4.062,4.062,,
+--CTSD1:SMFD/2023,5612,7342089.784,2456946.604,-0.003,-0.005,,,,,,
+--HRMS:0.006, VRMS:0.010, STATUS:FIXED, SATS:27, AGE:1.0, PDOP:0.905, HDOP:0.510, VDOP:0.748, TDOP:0.482, GDOP:1.025
+GPS,PN5613,LA45.043979893762,LN-67.024690976015,EL-4.274171,--SMFD/DMSE 2023
+--GS,PN5613,N 7342070.0463,E 2456977.1489,EL2.0722,--SMFD/DMSE 2023
+--GT,PN5613,SW2275,ST239197000,EW2275,ET239199000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342070.0381  Max: 7342070.0547
+--Eas Min: 2456977.1471  Max: 2456977.1516
+--Elv Min: 2.0709  Max: 2.0740
+--Nor Avg: 7342070.0463  SD: 0.0068
+--Eas Avg: 2456977.1489  SD: 0.0019
+--Elv Avg: 2.0722  SD: 0.0013
+--HRMS Avg: 0.0147 SD: 0.0006 Min: 0.0142 Max: 0.0156
+--VRMS Avg: 0.0205 SD: 0.0009 Min: 0.0197 Max: 0.0217
+--HDOP Avg: 0.5917  Min: 0.5917 Max: 0.5917
+--VDOP Avg: 0.8732 Min: 0.8732 Max: 0.8732
+--PDOP Avg: 1.0548 Min: 1.0548 Max: 1.0548
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 22 Min: 22 Max: 22
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.001,Right 0.000,0+00.001,Left 0.031,0.000,2.072,2.072,,
+--CTSD1:SMFD/DMSE 2023,5613,7342070.046,2456977.149,-0.017,-0.026,,,,,,
+--HRMS:0.016, VRMS:0.022, STATUS:FIXED, SATS:22, AGE:2.0, PDOP:1.055, HDOP:0.592, VDOP:0.873, TDOP:0.572, GDOP:1.200
+GPS,PN5614,LA45.043979885376,LN-67.024690960773,EL-3.641817,--SMFD/DMSE 2023
+--GS,PN5614,N 7342070.0437,E 2456977.1522,EL2.7045,--SMFD/DMSE 2023
+--GT,PN5614,SW2275,ST239270000,EW2275,ET239272000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342070.0417  Max: 7342070.0465
+--Eas Min: 2456977.1502  Max: 2456977.1545
+--Elv Min: 2.7020  Max: 2.7065
+--Nor Avg: 7342070.0437  SD: 0.0021
+--Eas Avg: 2456977.1522  SD: 0.0018
+--Elv Avg: 2.7045  SD: 0.0019
+--HRMS Avg: 0.0133 SD: 0.0003 Min: 0.0130 Max: 0.0136
+--VRMS Avg: 0.0155 SD: 0.0003 Min: 0.0151 Max: 0.0158
+--HDOP Avg: 0.6614  Min: 0.6614 Max: 0.6615
+--VDOP Avg: 0.8668 Min: 0.8667 Max: 0.8670
+--PDOP Avg: 1.0903 Min: 1.0902 Max: 1.0905
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 21 Min: 21 Max: 22
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.006,Right 0.000,0+00.006,Left 0.031,0.000,2.705,2.705,,
+--CTSD1:SMFD/DMSE 2023,5614,7342070.044,2456977.152,-0.017,-0.026,,,,,,
+--HRMS:0.014, VRMS:0.016, STATUS:FIXED, SATS:22, AGE:2.0, PDOP:1.091, HDOP:0.661, VDOP:0.867, TDOP:0.592, GDOP:1.241
+GPS,PN5615,LA45.043933803340,LN-67.024589228672,EL-6.982266,--SMPL
+--GS,PN5615,N 7342055.6651,E 2456999.3073,EL-0.6359,--SMPL
+--GT,PN5615,SW2275,ST239459500,EW2275,ET239461500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342055.6639  Max: 7342055.6659
+--Eas Min: 2456999.3066  Max: 2456999.3087
+--Elv Min: -0.6372  Max: -0.6347
+--Nor Avg: 7342055.6651  SD: 0.0009
+--Eas Avg: 2456999.3073  SD: 0.0010
+--Elv Avg: -0.6359  SD: 0.0010
+--HRMS Avg: 0.0075 SD: 0.0001 Min: 0.0074 Max: 0.0076
+--VRMS Avg: 0.0123 SD: 0.0001 Min: 0.0122 Max: 0.0124
+--HDOP Avg: 0.5193  Min: 0.5193 Max: 0.5193
+--VDOP Avg: 0.7746 Min: 0.7745 Max: 0.7747
+--PDOP Avg: 0.9326 Min: 0.9325 Max: 0.9326
+--AGE Avg: 1.6667 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 26 Min: 26 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.001,Right 0.000,0+00.001,Left 0.002,0.000,-0.636,,0.636,SMPL,
+--CTSD1:5615,7342055.665,2456999.307,0.001,0.002,,,,,,
+--HRMS:0.007, VRMS:0.012, STATUS:FIXED, SATS:26, AGE:1.0, PDOP:0.933, HDOP:0.519, VDOP:0.775, TDOP:0.504, GDOP:1.060
+GPS,PN5616,LA45.043933801132,LN-67.024589247687,EL-6.611130,--SMPL
+--GS,PN5616,N 7342055.6645,E 2456999.3032,EL-0.2648,--SMPL
+--GT,PN5616,SW2275,ST239468000,EW2275,ET239470000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342055.6615  Max: 7342055.6702
+--Eas Min: 2456999.2997  Max: 2456999.3058
+--Elv Min: -0.2655  Max: -0.2638
+--Nor Avg: 7342055.6645  SD: 0.0040
+--Eas Avg: 2456999.3032  SD: 0.0026
+--Elv Avg: -0.2648  SD: 0.0007
+--HRMS Avg: 0.0077 SD: 0.0000 Min: 0.0076 Max: 0.0077
+--VRMS Avg: 0.0122 SD: 0.0000 Min: 0.0122 Max: 0.0123
+--HDOP Avg: 0.5313  Min: 0.5313 Max: 0.5313
+--VDOP Avg: 0.8248 Min: 0.8248 Max: 0.8248
+--PDOP Avg: 0.9811 Min: 0.9811 Max: 0.9811
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.005,Right 0.000,0+00.005,Left 0.005,0.000,-0.265,,0.265,SMPL,
+--CTSD1:5616,7342055.664,2456999.303,0.003,0.004,,,,,,
+--HRMS:0.008, VRMS:0.012, STATUS:FIXED, SATS:25, AGE:2.0, PDOP:0.981, HDOP:0.531, VDOP:0.825, TDOP:0.544, GDOP:1.122
+GPS,PN5617,LA45.044061268409,LN-67.024716078400,EL-3.492001,--NAIL
+--GS,PN5617,N 7342095.2058,E 2456971.8299,EL2.8544,--NAIL
+--GT,PN5617,SW2275,ST239705000,EW2275,ET239707000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342095.2025  Max: 7342095.2087
+--Eas Min: 2456971.8256  Max: 2456971.8325
+--Elv Min: 2.8525  Max: 2.8560
+--Nor Avg: 7342095.2058  SD: 0.0025
+--Eas Avg: 2456971.8299  SD: 0.0030
+--Elv Avg: 2.8544  SD: 0.0014
+--HRMS Avg: 0.0061 SD: 0.0001 Min: 0.0060 Max: 0.0063
+--VRMS Avg: 0.0094 SD: 0.0002 Min: 0.0093 Max: 0.0097
+--HDOP Avg: 0.5232  Min: 0.5232 Max: 0.5232
+--VDOP Avg: 0.7926 Min: 0.7925 Max: 0.7927
+--PDOP Avg: 0.9497 Min: 0.9496 Max: 0.9498
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+07.514,Right 0.000,0+07.514,Left 0.002,0.000,2.854,2.854,,NAIL,
+--CTSD1:5617,7342095.206,2456971.830,-0.002,0.001,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:25, AGE:2.0, PDOP:0.950, HDOP:0.523, VDOP:0.793, TDOP:0.515, GDOP:1.080
+GPS,PN5618,LA45.044060490754,LN-67.024719700223,EL-3.885471,--CL/FORMS
+--GS,PN5618,N 7342094.9711,E 2456971.0361,EL2.4609,--CL/FORMS
+--GT,PN5618,SW2275,ST239995500,EW2275,ET239997500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342094.9703  Max: 7342094.9717
+--Eas Min: 2456971.0359  Max: 2456971.0363
+--Elv Min: 2.4603  Max: 2.4618
+--Nor Avg: 7342094.9711  SD: 0.0006
+--Eas Avg: 2456971.0361  SD: 0.0002
+--Elv Avg: 2.4609  SD: 0.0007
+--HRMS Avg: 0.0061 SD: 0.0001 Min: 0.0060 Max: 0.0062
+--VRMS Avg: 0.0093 SD: 0.0001 Min: 0.0091 Max: 0.0095
+--HDOP Avg: 0.5419  Min: 0.5419 Max: 0.5419
+--VDOP Avg: 0.8592 Min: 0.8592 Max: 0.8592
+--PDOP Avg: 1.0159 Min: 1.0159 Max: 1.0159
+--AGE Avg: 1.6667 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+08.137,Right 0.000,0+08.137,Right 0.543,0.000,2.461,2.461,,
+--CTSD1:CL/FORMS,5618,7342094.971,2456971.036,0.458,-0.291,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:25, AGE:2.0, PDOP:1.016, HDOP:0.542, VDOP:0.859, TDOP:0.566, GDOP:1.163
+GPS,PN5618,LA45.044060839585,LN-67.024720859968,EL-3.865428,--CL/COMMON WALL
+--GS,PN5618,N 7342095.0806,E 2456970.7831,EL2.4809,--CL/COMMON WALL
+--GT,PN5618,SW2275,ST240105000,EW2275,ET240107000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342095.0788  Max: 7342095.0818
+--Eas Min: 2456970.7803  Max: 2456970.7863
+--Elv Min: 2.4782  Max: 2.4837
+--Nor Avg: 7342095.0806  SD: 0.0013
+--Eas Avg: 2456970.7831  SD: 0.0025
+--Elv Avg: 2.4809  SD: 0.0022
+--HRMS Avg: 0.0061 SD: 0.0000 Min: 0.0061 Max: 0.0062
+--VRMS Avg: 0.0094 SD: 0.0001 Min: 0.0093 Max: 0.0095
+--HDOP Avg: 0.5420  Min: 0.5420 Max: 0.5420
+--VDOP Avg: 0.8692 Min: 0.8690 Max: 0.8693
+--PDOP Avg: 1.0243 Min: 1.0242 Max: 1.0244
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+08.180,Right 0.000,0+08.180,Right 0.815,0.000,2.481,2.481,,
+--CTSD1:CL/COMMON WALL,5618,7342095.081,2456970.783,0.688,-0.437,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:25, AGE:2.0, PDOP:1.024, HDOP:0.542, VDOP:0.869, TDOP:0.572, GDOP:1.173
+GPS,PN5619,LA45.044051970251,LN-67.024728661062,EL-3.888875,--CL/COMMON WALL
+--GS,PN5619,N 7342092.3541,E 2456969.0580,EL2.4575,--CL/COMMON WALL
+--GT,PN5619,SW2275,ST240146499,EW2275,ET240148500
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342092.3517  Max: 7342092.3562
+--Eas Min: 2456969.0570  Max: 2456969.0596
+--Elv Min: 2.4554  Max: 2.4605
+--Nor Avg: 7342092.3541  SD: 0.0019
+--Eas Avg: 2456969.0580  SD: 0.0011
+--Elv Avg: 2.4575  SD: 0.0022
+--HRMS Avg: 0.0057 SD: 0.0001 Min: 0.0056 Max: 0.0058
+--VRMS Avg: 0.0087 SD: 0.0001 Min: 0.0085 Max: 0.0088
+--HDOP Avg: 0.5584  Min: 0.5584 Max: 0.5584
+--VDOP Avg: 0.9537 Min: 0.9536 Max: 0.9539
+--PDOP Avg: 1.1051 Min: 1.1050 Max: 1.1053
+--AGE Avg: 1.6667 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 24 Min: 24 Max: 24
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+11.407,Right 0.000,0+11.407,Right 0.811,0.000,2.457,2.457,,
+--CTSD1:CL/COMMON WALL,5619,7342092.354,2456969.058,0.684,-0.434,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:24, AGE:2.0, PDOP:1.105, HDOP:0.558, VDOP:0.954, TDOP:0.640, GDOP:1.277
+GPS,PN5620,LA45.044035464669,LN-67.024743146356,EL-3.880022,--CL/COMMON WALL
+--GS,PN5620,N 7342087.2801,E 2456965.8548,EL2.4663,--CL/COMMON WALL
+--GT,PN5620,SW2275,ST240171000,EW2275,ET240173000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342087.2788  Max: 7342087.2818
+--Eas Min: 2456965.8533  Max: 2456965.8556
+--Elv Min: 2.4637  Max: 2.4690
+--Nor Avg: 7342087.2801  SD: 0.0012
+--Eas Avg: 2456965.8548  SD: 0.0010
+--Elv Avg: 2.4663  SD: 0.0022
+--HRMS Avg: 0.0066 SD: 0.0001 Min: 0.0065 Max: 0.0067
+--VRMS Avg: 0.0093 SD: 0.0001 Min: 0.0091 Max: 0.0094
+--HDOP Avg: 0.5421  Min: 0.5421 Max: 0.5421
+--VDOP Avg: 0.8750 Min: 0.8748 Max: 0.8751
+--PDOP Avg: 1.0293 Min: 1.0291 Max: 1.0294
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+17.407,Right 0.000,0+17.407,Right 0.797,0.000,2.466,2.466,,
+--CTSD1:CL/COMMON WALL,5620,7342087.280,2456965.855,0.673,-0.427,,,,,,
+--HRMS:0.007, VRMS:0.009, STATUS:FIXED, SATS:25, AGE:2.0, PDOP:1.029, HDOP:0.542, VDOP:0.875, TDOP:0.576, GDOP:1.180
+SP,PN1,N 7342101.9270,E 2456975.2630,EL0.0000,--CALC
+SP,PN81,N 7342080.1610,E 2456961.4520,EL0.0000,--SMS
+GPS,PN5621,LA45.044062469432,LN-67.024718832934,EL-3.481314,--NAIL
+--GS,PN5621,N 7342095.5807,E 2456971.2299,EL2.8650,--NAIL
+--GT,PN5621,SW2275,ST240844499,EW2275,ET240846499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342095.5791  Max: 7342095.5820
+--Eas Min: 2456971.2277  Max: 2456971.2311
+--Elv Min: 2.8644  Max: 2.8657
+--Nor Avg: 7342095.5807  SD: 0.0012
+--Eas Avg: 2456971.2299  SD: 0.0016
+--Elv Avg: 2.8650  SD: 0.0006
+--HRMS Avg: 0.0057 SD: 0.0000 Min: 0.0057 Max: 0.0057
+--VRMS Avg: 0.0085 SD: 0.0000 Min: 0.0085 Max: 0.0085
+--HDOP Avg: 0.5270  Min: 0.5270 Max: 0.5270
+--VDOP Avg: 0.8547 Min: 0.8546 Max: 0.8548
+--PDOP Avg: 1.0041 Min: 1.0040 Max: 1.0042
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 26
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+18.259,Right 0.000,0+18.259,Left 0.005,0.000,2.865,2.865,,NAIL,
+--CTSD1:5621,7342095.581,2456971.230,0.004,-0.003,,,,,,
+--HRMS:0.006, VRMS:0.008, STATUS:FIXED, SATS:26, AGE:1.0, PDOP:1.004, HDOP:0.527, VDOP:0.855, TDOP:0.553, GDOP:1.146
+GPS,PN5622,LA45.044032431420,LN-67.024745306249,EL-3.475617,--NAIL
+--GS,PN5622,N 7342086.3469,E 2456965.3759,EL2.8707,--NAIL
+--GT,PN5622,SW2275,ST240952000,EW2275,ET240954000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342086.3443  Max: 7342086.3501
+--Eas Min: 2456965.3744  Max: 2456965.3778
+--Elv Min: 2.8700  Max: 2.8711
+--Nor Avg: 7342086.3469  SD: 0.0024
+--Eas Avg: 2456965.3759  SD: 0.0014
+--Elv Avg: 2.8707  SD: 0.0005
+--HRMS Avg: 0.0061 SD: 0.0000 Min: 0.0061 Max: 0.0061
+--VRMS Avg: 0.0090 SD: 0.0000 Min: 0.0090 Max: 0.0090
+--HDOP Avg: 0.5047  Min: 0.5047 Max: 0.5047
+--VDOP Avg: 0.8088 Min: 0.8088 Max: 0.8088
+--PDOP Avg: 0.9534 Min: 0.9534 Max: 0.9534
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 27
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+07.326,Right 0.000,0+07.326,Left 0.001,0.000,2.871,2.871,,NAIL,
+--CTSD1:5622,7342086.347,2456965.376,0.001,-0.001,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:27, AGE:2.0, PDOP:0.953, HDOP:0.505, VDOP:0.809, TDOP:0.517, GDOP:1.085
+GPS,PN5623,LA45.044012339704,LN-67.024763077564,EL-3.514291,--SMPL/ADJ
+--GS,PN5623,N 7342080.1708,E 2456961.4463,EL2.8321,--SMPL/ADJ
+--GT,PN5623,SW2275,ST241111000,EW2275,ET241113000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342080.1695  Max: 7342080.1715
+--Eas Min: 2456961.4427  Max: 2456961.4488
+--Elv Min: 2.8302  Max: 2.8342
+--Nor Avg: 7342080.1708  SD: 0.0009
+--Eas Avg: 2456961.4463  SD: 0.0026
+--Elv Avg: 2.8321  SD: 0.0017
+--HRMS Avg: 0.0062 SD: 0.0001 Min: 0.0061 Max: 0.0063
+--VRMS Avg: 0.0090 SD: 0.0001 Min: 0.0088 Max: 0.0091
+--HDOP Avg: 0.4938  Min: 0.4938 Max: 0.4939
+--VDOP Avg: 0.7855 Min: 0.7854 Max: 0.7856
+--PDOP Avg: 0.9279 Min: 0.9278 Max: 0.9279
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 28
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.005,Right 0.000,0+00.005,Left 0.010,0.000,2.832,2.832,,
+--CTSD1:SMPL/ADJ,5623,7342080.171,2456961.446,0.008,-0.005,,,,,,
+--HRMS:0.006, VRMS:0.009, STATUS:FIXED, SATS:28, AGE:2.0, PDOP:0.928, HDOP:0.494, VDOP:0.786, TDOP:0.497, GDOP:1.053
+GPS,PN5624,LA45.044012344149,LN-67.024763086460,EL-3.204513,--SMPL/ADJ
+--GS,PN5624,N 7342080.1722,E 2456961.4444,EL3.1418,--SMPL/ADJ
+--GT,PN5624,SW2275,ST241124499,EW2275,ET241126499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342080.1696  Max: 7342080.1753
+--Eas Min: 2456961.4369  Max: 2456961.4546
+--Elv Min: 3.1407  Max: 3.1425
+--Nor Avg: 7342080.1722  SD: 0.0024
+--Eas Avg: 2456961.4444  SD: 0.0075
+--Elv Avg: 3.1418  SD: 0.0008
+--HRMS Avg: 0.0059 SD: 0.0001 Min: 0.0057 Max: 0.0060
+--VRMS Avg: 0.0086 SD: 0.0002 Min: 0.0083 Max: 0.0087
+--HDOP Avg: 0.5011  Min: 0.5011 Max: 0.5011
+--VDOP Avg: 0.8111 Min: 0.8110 Max: 0.8111
+--PDOP Avg: 0.9534 Min: 0.9534 Max: 0.9534
+--AGE Avg: 1.3333 Min: 1.0000 Max: 2.0000
+--Number of Satellites Avg: 27 Min: 27 Max: 27
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+00.005,Right 0.000,0+00.005,Left 0.012,0.000,3.142,3.142,,
+--CTSD1:SMPL/ADJ,5624,7342080.172,2456961.444,0.010,-0.007,,,,,,
+--HRMS:0.006, VRMS:0.008, STATUS:FIXED, SATS:27, AGE:1.0, PDOP:0.953, HDOP:0.501, VDOP:0.811, TDOP:0.518, GDOP:1.085
+GPS,PN5625,LA45.044077332112,LN-67.024603721943,EL-1.580767,--PWS
+--GS,PN5625,N 7342099.9970,E 2456996.4399,EL4.7656,--PWS
+--GT,PN5625,SW2275,ST241265000,EW2275,ET241267000
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342099.9947  Max: 7342099.9984
+--Eas Min: 2456996.4389  Max: 2456996.4408
+--Elv Min: 4.7631  Max: 4.7672
+--Nor Avg: 7342099.9970  SD: 0.0016
+--Eas Avg: 2456996.4399  SD: 0.0008
+--Elv Avg: 4.7656  SD: 0.0018
+--HRMS Avg: 0.0081 SD: 0.0001 Min: 0.0080 Max: 0.0082
+--VRMS Avg: 0.0118 SD: 0.0001 Min: 0.0116 Max: 0.0119
+--HDOP Avg: 0.5550  Min: 0.5550 Max: 0.5550
+--VDOP Avg: 0.9013 Min: 0.9013 Max: 0.9013
+--PDOP Avg: 1.0585 Min: 1.0585 Max: 1.0585
+--AGE Avg: 2.0000 Min: 2.0000 Max: 2.0000
+--Number of Satellites Avg: 24 Min: 24 Max: 24
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+15.529,Right 0.000,0+15.529,Right 0.004,0.000,4.766,4.766,,PWS,
+--CTSD1:5625,7342099.997,2456996.440,0.003,-0.002,,,,,,
+--HRMS:0.008, VRMS:0.012, STATUS:FIXED, SATS:24, AGE:2.0, PDOP:1.058, HDOP:0.555, VDOP:0.901, TDOP:0.591, GDOP:1.212
+GPS,PN5626,LA45.044101266557,LN-67.024582262695,EL-1.182313,--PWS
+--GS,PN5626,N 7342107.3540,E 2457001.1842,EL5.1640,--PWS
+--GT,PN5626,SW2275,ST241334500,EW2275,ET241336499
+--Valid Readings: 3 of 3
+--Fixed Readings: 3 of 3
+--Nor Min: 7342107.3504  Max: 7342107.3567
+--Eas Min: 2457001.1818  Max: 2457001.1856
+--Elv Min: 5.1595  Max: 5.1672
+--Nor Avg: 7342107.3540  SD: 0.0027
+--Eas Avg: 2457001.1842  SD: 0.0017
+--Elv Avg: 5.1640  SD: 0.0033
+--HRMS Avg: 0.0070 SD: 0.0001 Min: 0.0069 Max: 0.0071
+--VRMS Avg: 0.0117 SD: 0.0002 Min: 0.0116 Max: 0.0120
+--HDOP Avg: 0.5214  Min: 0.5214 Max: 0.5214
+--VDOP Avg: 0.8425 Min: 0.8425 Max: 0.8425
+--PDOP Avg: 0.9908 Min: 0.9908 Max: 0.9908
+--AGE Avg: 1.0000 Min: 1.0000 Max: 1.0000
+--Number of Satellites Avg: 25 Min: 25 Max: 25
+--CTSS2:Proposed-McBrien-Lake-Access-Road-Alternative(2).cl
+--CTSD0:Design Pt#,Design Sta,Design Off,Staked Sta,Staked Off,Design Elv,
+--CTSD1:Stake Elv,Cut,Fill,Desc,Stake Pt#,Stake Nor,Stake Eas,Delta X,Delta Y,
+--CTSD2:Design Off Ref,Design Elv Ref,Cut Ref,Fill Ref,Staked Sta Ref,
+--CTSD3:Staked Off Ref
+--CTSD0:PP,0+06.775,Right 0.000,0+06.775,Right 0.000,0.000,5.164,5.164,,PWS,
+--CTSD1:5626,7342107.354,2457001.184,0.000,-0.000,,,,,,
+--HRMS:0.007, VRMS:0.012, STATUS:FIXED, SATS:25, AGE:1.0, PDOP:0.991, HDOP:0.521, VDOP:0.843, TDOP:0.548, GDOP:1.132

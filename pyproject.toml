@@ -1,0 +1,64 @@
+[project]
+name = "rw5lib"
+version = "0.1.0"
+description = "Extract data from the raw field controller format RW5."
+readme = "README.md"
+authors = [
+  {name = "Joseph Long", email = "joseph.long@dmse.ca"}
+]
+maintainers = [
+  {name = "Joseph Long", email = "joseph.long@dmse.ca"}
+]
+classifiers = [
+    # TODO
+]
+license = {text = "MIT"}
+dependencies = [
+  "typer",
+  "rich",
+  "matplotlib>=3.10.8",
+]
+requires-python = ">= 3.10"
+
+[project.optional-dependencies]
+test = [
+    "coverage",  # testing
+    "pytest",  # testing
+    "ruff",  # linting
+    "ty", # checking types
+    "ipdb", # debugging
+]
+
+[project.urls]
+bugs = "https://github.com/j-osephlong/rw5lib/issues"
+changelog = "https://github.com/j-osephlong/rw5lib/blob/main/changelog.md"
+homepage = "https://github.com/j-osephlong/rw5lib"
+
+[project.scripts]
+rw5lib = "rw5lib.cli:app"
+
+[tool.ty]
+# All rules are enabled as "error" by default; no need to specify unless overriding.
+# Example override: relax a rule for the entire project (uncomment if needed).
+# rules.TY015 = "warn"  # For invalid-argument-type, warn instead of error.
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
