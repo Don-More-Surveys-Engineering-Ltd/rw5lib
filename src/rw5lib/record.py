@@ -318,8 +318,9 @@ class SSRecord(DatedRecord):
         return fields
 
     @property
-    def foresight_distance(self):  # noqa: D102
-        return self.fields["SD"]  # slope distance a.k.a foresight distance
+    def foresight_distance(self) -> float | None:  # noqa: D102
+        value = self.fields.get("SD")
+        return float(value) if value else None  # slope distance a.k.a foresight distance
 
     @property
     def offset_distance(self) -> float | None:
