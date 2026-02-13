@@ -109,7 +109,7 @@ def test_get_point():
     rw5 = Path("./tests/data/ss.test.rw5")
     result = RW5Parser(rw5_path=rw5, crdb_path=None, tzinfo=None).result
     # test gfetting first and last points in file
-    assert result.get_point("967").point_id == "967"  # type: ignore
+    assert result.get_point("G1").point_id == "G1"  # type: ignore
     assert result.get_point("7007").point_id == "7007"  # type: ignore
 
 
@@ -201,7 +201,7 @@ def test_find_machine_state_changes_projection():
 def test_find_machine_state_changes_GPS_rod_height():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
     RW5Parser._find_machine_state_changes(m, ENTERED_ROVER_HR.splitlines())  # type: ignore
-    assert m.rod_height and m.rod_height == "2.0000"
+    assert m.rod_height and m.rod_height == 2
 
 
 def test_find_machine_state_changes_prism():

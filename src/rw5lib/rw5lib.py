@@ -6,6 +6,7 @@ import logging
 import math
 from pathlib import Path
 
+from rw5lib.exceptions import MalformedGPSRecordError
 from rw5lib.record import RECORD_CLASSES, BKRecord, MachineState, OCRecord
 from rw5lib.result import RW5Result
 from rw5lib.totalstation import TSStation
@@ -38,23 +39,27 @@ class RW5Parser:
             record_code = block[0].split(",")[0].strip()
             if record_code in RECORD_CLASSES:
                 # create/parse record
-                curr_record = RECORD_CLASSES[record_code](
-                    block,
-                    record_blocks[index - 1] if index > 0 else None,
-                    self.machine_state,
-                    self.tzinfo,
-                )
-                # if point id seen already...
-                if curr_record.point_id is not None and curr_record.point_id in visited_point_ids:
-                    # remove the earlier verion of the point
-                    self.result.records = [r for r in self.result.records if r.point_id != curr_record.point_id]
-                # copy over potentially updated machine state
-                self.machine_state = copy.deepcopy(curr_record.machine_state)
-                # append record
-                self.result.records.append(curr_record)
-                # make note that we've visited a record with this point id before
-                if curr_record.point_id is not None:
-                    visited_point_ids.add(curr_record.point_id)
+                try:
+                    curr_record = RECORD_CLASSES[record_code](
+                        block,
+                        record_blocks[index - 1] if index > 0 else None,
+                        self.machine_state,
+                        self.tzinfo,
+                    )
+                    # if point id seen already...
+                    if curr_record.point_id is not None and curr_record.point_id in visited_point_ids:
+                        # remove the earlier verion of the point
+                        self.result.records = [r for r in self.result.records if r.point_id != curr_record.point_id]
+                    # copy over potentially updated machine state
+                    self.machine_state = copy.deepcopy(curr_record.machine_state)
+                    # append record
+                    self.result.records.append(curr_record)
+                    # make note that we've visited a record with this point id before
+                    if curr_record.point_id is not None:
+                        visited_point_ids.add(curr_record.point_id)
+                except MalformedGPSRecordError:
+                    # if record is malformed, fail silently and continue
+                    pass
             else:
                 logger.debug(f"No record class found for record code {record_code}.")
             # post record hooks

@@ -171,8 +171,8 @@ RECORD_CHECKS: Any = [
         """,
         {
             "type": "BP",
-            "point_id": "2291_BASE_1",
-            "fields": {},
+            "point_id": None,
+            "fields": {"PN": "2291_BASE_1"},
         },
     ),
     (
@@ -275,8 +275,8 @@ def test_parse_ls_record_with_hr_and_hi(default_machine_state: MachineState):
     """Test that the LS record changes the machine state."""
     record: list[str] = "LS,HI1.5450,HR1.4700".splitlines()  # type: ignore
     ls = LSRecord(record, None, default_machine_state, datetime.timezone.utc)
-    assert ls.machine_state.instrument_height == "1.5450"
-    assert ls.machine_state.rod_height == "1.4700"
+    assert ls.machine_state.instrument_height == 1.545
+    assert ls.machine_state.rod_height == 1.47
 
 
 def test_dated_record(default_machine_state: MachineState):

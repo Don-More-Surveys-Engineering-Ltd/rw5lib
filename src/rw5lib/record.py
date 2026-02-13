@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from functools import cached_property
 from typing import Any
 
+from rw5lib.exceptions import MalformedGPSRecordError
 from rw5lib.utils import parse_rw5_format_datetime, parse_std_params_line
 
 
@@ -126,9 +127,6 @@ class BPRecord(RW5Record):
 
     """
 
-    def get_point_id(self) -> str:  # noqa: D102
-        return self.fields["PN"]
-
 
 class BKRecord(RW5Record):
     """Parse BK (backsight) record.
@@ -239,6 +237,8 @@ class GPSRecord(DatedRecord):
             fields.update(self._get_quality_summary_line_fields(quality_summary))
         else:
             fields.update(self._quality_fields_fallback())
+        if "HRMS" not in fields:
+            raise MalformedGPSRecordError
         return fields
 
     @property
