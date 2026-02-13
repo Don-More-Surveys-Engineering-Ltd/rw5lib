@@ -267,6 +267,9 @@ class GPSRecord(DatedRecord):
     def num_sats(self):
         return self.fields.get("SATS")
 
+    def status(self):
+        return self.fields.get("STATUS")
+
 
 class SSRecord(DatedRecord):
     """Side shot record.

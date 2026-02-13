@@ -71,11 +71,20 @@ def plot_total_station_data(result: "RW5Result", crdb_path: Path) -> io.BytesIO:
 
     Returns BytesIO object containing png data.
     """
-    applicable_shots = [r for r in result.records if r.type in {"OC", "SS", "BK", "GPS"} and r.point_id is not None]
-    coords = {r.point_id: get_crdb_coordinate(r.point_id, crdb_path) for r in applicable_shots if r.point_id}
+    applicable_records = [
+        r for r in result.records if r.type in {"OC", "SS", "BK", "GPS", "SP"} and r.point_id is not None
+    ]
+    coords: dict[str, tuple[float, float, float]] = {}
+    for record in applicable_records:
+        if not record.point_id:
+            continue
+        try:
+            coords[record.point_id] = get_crdb_coordinate(record.point_id, crdb_path)
+        except ValueError:
+            pass
     # setup figure
     extent = get_extent(
-        [coords[r.point_id] for r in applicable_shots if r.point_id],
+        [coords[r.point_id] for r in applicable_records if r.point_id],
     )
     new_extent = (0, 0, 10, 10)
     fig, ax = plt.subplots(figsize=new_extent[2:], dpi=128)
