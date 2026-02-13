@@ -9,6 +9,16 @@ Extract data from the raw field controller format RW5.
 * Free software: MIT License
 * Documentation: https://rw5lib.readthedocs.io.
 
+## Installation
+
+You can install the package and build locally by using pip to install from this repository.
+
+```sh
+pip install git+https://github.com/Don-More-Surveys-Engineering-Ltd/rw5lib.git@v0.1.4
+```
+
+Adjust the tag at the end to the version you'd like to pin.
+
 ## Features
 
 * TODO

@@ -20,6 +20,10 @@ dependencies = [
 ]
 requires-python = ">= 3.10"
 
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project.optional-dependencies]
 test = [
     "coverage",  # testing
