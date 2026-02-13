@@ -241,32 +241,50 @@ class GPSRecord(DatedRecord):
             fields.update(self._quality_fields_fallback())
         return fields
 
+    @property
     def hrms(self):
         value = self.fields.get("HRMS")
         return float(value) if value else None
 
+    @property
     def vrms(self):
         value = self.fields.get("VRMS")
         return float(value) if value else None
 
+    @property
     def hdop(self):
         value = self.fields.get("HDOP")
         return float(value) if value else None
 
+    @property
     def vdop(self):
         value = self.fields.get("VDOP")
         return float(value) if value else None
 
+    @property
     def pdop(self):
         value = self.fields.get("PDOP")
         return float(value) if value else None
 
+    @property
+    def tdop(self):
+        value = self.fields.get("TDOP")
+        return float(value) if value else None
+
+    @property
+    def gdop(self):
+        value = self.fields.get("GDOP")
+        return float(value) if value else None
+
+    @property
     def age(self):
         return self.fields.get("AGE")
 
+    @property
     def num_sats(self):
         return self.fields.get("SATS")
 
+    @property
     def status(self):
         return self.fields.get("STATUS")
 
