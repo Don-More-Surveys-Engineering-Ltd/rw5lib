@@ -85,7 +85,7 @@ class RW5Parser:
             # === GPS-TYPE ROD HEIGHT ===
             if line.startswith(rover_height_prefix):
                 machine_state.instrument_height = None
-                machine_state.rod_height = line.removeprefix(rover_height_prefix).split()[0]
+                machine_state.rod_height = float(line.removeprefix(rover_height_prefix).split()[0])
             # === EQUIPMENT ===
             if line.startswith(equipment_prefix):
                 machine_state.equipment = line.removeprefix(equipment_prefix).strip()

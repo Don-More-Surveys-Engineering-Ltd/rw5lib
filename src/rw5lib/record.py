@@ -15,8 +15,8 @@ from rw5lib.utils import parse_rw5_format_datetime, parse_std_params_line
 class MachineState:
     """Tracks fields over multiple records."""
 
-    instrument_height: str | None = None
-    rod_height: str | None = None
+    instrument_height: float | None = None
+    rod_height: float | None = None
     prism_applied: str | None = None
     projection: str | None = None
     equipment: str | None = None
@@ -186,8 +186,8 @@ class LSRecord(RW5Record):
         # these values as out instrument and rod heights.
         # if we only have HR, it indicates a switch to GPS, and we should not use the HR as rod height.
         if "HI" in self.fields and "HR" in self.fields:
-            self.machine_state.instrument_height = self.fields["HI"]
-            self.machine_state.rod_height = self.fields["HR"]
+            self.machine_state.instrument_height = float(self.fields["HI"])
+            self.machine_state.rod_height = float(self.fields["HR"])
 
 
 class GPSRecord(DatedRecord):
