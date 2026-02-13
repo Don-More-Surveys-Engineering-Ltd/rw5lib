@@ -16,31 +16,43 @@ class RW5Result:
 
     @cached_property
     def equipment_summary(self):
-        return ",\n".join({r.machine_state.equipment for r in self.records if r.machine_state.equipment is not None})
+        return ",\n".join(
+            sorted(list({r.machine_state.equipment for r in self.records if r.machine_state.equipment is not None}))
+        )
 
     @cached_property
     def antenna_type_summary(self):
         return ",\n".join(
-            {r.machine_state.antenna_type for r in self.records if r.machine_state.antenna_type is not None}
+            sorted(
+                list({r.machine_state.antenna_type for r in self.records if r.machine_state.antenna_type is not None})
+            )
         )
 
     @cached_property
     def rtk_method_summary(self):
-        return ",\n".join({r.machine_state.rtk_method for r in self.records if r.machine_state.rtk_method is not None})
+        return ",\n".join(
+            sorted(list({r.machine_state.rtk_method for r in self.records if r.machine_state.rtk_method is not None}))
+        )
 
     @cached_property
     def geoid_seperation_file_summary(self):
         return ",\n".join(
-            {
-                r.machine_state.geoid_seperation_file
-                for r in self.records
-                if r.machine_state.geoid_seperation_file is not None
-            }
+            sorted(
+                list(
+                    {
+                        r.machine_state.geoid_seperation_file
+                        for r in self.records
+                        if r.machine_state.geoid_seperation_file is not None
+                    }
+                )
+            )
         )
 
     @cached_property
     def projection_summary(self):
-        return ",\n".join({r.machine_state.projection for r in self.records if r.machine_state.projection is not None})
+        return ",\n".join(
+            sorted(list({r.machine_state.projection for r in self.records if r.machine_state.projection is not None}))
+        )
 
     @cached_property
     def _job_record(self):
