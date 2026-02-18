@@ -64,6 +64,7 @@ class RW5Parser:
                 logger.debug(f"No record class found for record code {record_code}.")
             # post record hooks
             self._find_machine_state_changes(self.machine_state, block)  # type: ignore
+            self._find_point_deletions(block)
         # find total stations if crdb available
         if self.crdb_path:
             self.find_total_stations()
@@ -105,12 +106,31 @@ class RW5Parser:
                 machine_state.rtk_method = line.removeprefix(rtk_prefix).strip()
             # === GEOID SEPERATION FILE ===
             if line.startswith(geoid_prefix):
-                machine_state.geoid_seperation_file = line.removeprefix(geoid_prefix).split("\\")[-1].split(" ")[0]
+                machine_state.geoid_seperation_file = line.removeprefix(geoid_prefix).split("\\")[-1].split()[0]
             # === PROJECTION ===
             if line.startswith(projection_prefix_1):
                 machine_state.projection = line.removeprefix(projection_prefix_1).strip()
             if line.startswith(projection_prefix_2):
                 machine_state.projection = line.removeprefix(projection_prefix_2).strip()
+
+    def _find_point_deletions(self, block: list[str]):
+        """Find lines that indicate that a point was deleted from the CRDB or other points file.
+
+        If found, remove the point ids from our records.
+        """
+        point_deleted_prefix = "--Deleted Point ID(s):"
+        # find lines indicating a point deletion
+        deletion_lines = [line for line in block if line.startswith(point_deleted_prefix)]
+        # parse out ids
+        deleted_ids: list[str] = []
+        for line in deletion_lines:
+            parts = line.removeprefix(point_deleted_prefix).split()
+            if len(parts) > 0:
+                # the first item in split array should be the point id
+                deleted_ids.append(parts[0])
+        # filter deleted records out of current list of records
+        if len(deleted_ids) > 0:
+            self.result.records = [r for r in self.result.records if r.point_id not in deleted_ids]
 
     @staticmethod
     def _group_lines_into_record_blocks(lines: list[str]) -> list[list[str]]:
