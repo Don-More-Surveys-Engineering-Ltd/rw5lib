@@ -1,3 +1,4 @@
+# pyright: reportPrivateUsage=none
 import datetime
 from pathlib import Path
 from typing import Any
@@ -82,7 +83,7 @@ def test_convert(
 
     lines = data["rw5"].read_text(encoding=rw5_encoding).splitlines()
 
-    command_blocks = RW5Parser._group_lines_into_record_blocks(lines)  # type: ignore
+    command_blocks = RW5Parser._group_lines_into_record_blocks(lines)
     assert len(command_blocks) == data["num_command_blocks"]
 
 
@@ -109,8 +110,8 @@ def test_get_point():
     rw5 = Path("./tests/data/ss.test.rw5")
     result = RW5Parser(rw5_path=rw5, crdb_path=None, tzinfo=None).result
     # test gfetting first and last points in file
-    assert result.get_point("G1").point_id == "G1"  # type: ignore
-    assert result.get_point("7007").point_id == "7007"  # type: ignore
+    assert result.get_point("G1").point_id == "G1"  # pyright: ignore[reportOptionalMemberAccess]
+    assert result.get_point("7007").point_id == "7007"  # pyright: ignore[reportOptionalMemberAccess]
 
 
 MO_RECORD = r"""MO,AD0,UN1,SF1.00000000,EC0,EO0.0,AU0
@@ -163,11 +164,11 @@ def test_find_machine_state_changes_equipment():
     First parse a MO record that has comments describing a GPS RTK system, then parse a record that has comments for a transition to totals station.
     """
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, MO_RECORD.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, MO_RECORD.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.equipment and m.equipment.startswith("Carlson,  BRx7")
     assert m.antenna_type is not None
     assert m.rtk_method is not None
-    RW5Parser._find_machine_state_changes(m, GPS_SWITCH_TO_TOTAL_STATION.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, GPS_SWITCH_TO_TOTAL_STATION.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.equipment.startswith("Geomax Robotic")
     # should clear antenna and rtk if not found
     assert m.antenna_type is None
@@ -176,37 +177,52 @@ def test_find_machine_state_changes_equipment():
 
 def test_find_machine_state_changes_rtk():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, MO_RECORD.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, MO_RECORD.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.rtk_method and m.rtk_method.startswith("RTCM V3.0")
 
 
 def test_find_machine_state_changes_antenna():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, MO_RECORD.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, MO_RECORD.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.antenna_type and m.antenna_type.startswith("[BRX7 Internal]")
 
 
 def test_find_machine_state_changes_geoid():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, MO_RECORD.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, MO_RECORD.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.geoid_seperation_file and m.geoid_seperation_file.startswith(r"Canadian_cgg2013.gsb")
 
 
 def test_find_machine_state_changes_projection():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, MO_RECORD.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, MO_RECORD.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.projection and m.projection == "CANADA/NAD83/New Brunswick"
 
 
 def test_find_machine_state_changes_GPS_rod_height():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, ENTERED_ROVER_HR.splitlines())  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, ENTERED_ROVER_HR.splitlines())  # pyright: ignore[reportArgumentType]
     assert m.rod_height and m.rod_height == 2
 
 
 def test_find_machine_state_changes_prism():
     m = MachineState(equipment="A", antenna_type="A", rtk_method="A")
-    RW5Parser._find_machine_state_changes(m, ["--P.C. mm Applied: -11.3000 (Leica 360:foresight)"])  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, ["--P.C. mm Applied: -11.3000 (Leica 360:foresight)"])
     assert m.prism_applied and m.prism_applied == "Leica 360"
-    RW5Parser._find_machine_state_changes(m, ["--P.C. mm Applied: 0.0000 (Reflectorless:foresight)"])  # type: ignore
+    RW5Parser._handle_machine_state_changes(m, ["--P.C. mm Applied: 0.0000 (Reflectorless:foresight)"])
     assert m.prism_applied and m.prism_applied == "Reflectorless"
+
+
+def test_handle_point_deletions():
+    str_in = """SS,OPCP3,FP5066,AR312.0945,ZE87.4121,SD10.869500,--BLDS
+    SS,OPCP3,FP5067,AR312.0945,ZE87.4121,SD10.869500,--BLDS
+    SS,OPCP3,FP5068,AR312.0945,ZE87.4121,SD10.869500,--BLDS
+    --Deleted Point ID(s): 5066 from the coordinate file on DT02-13-2026 at TM11:16:48
+    --Deleted Point ID(s): 5067 from the coordinate file on DT02-13-2026 at TM11:16:48"""
+    expected_point_ids = ["5066", "5067"]
+    deleted_point_ids = RW5Parser._find_deleted_point_ids([l.strip() for l in str_in.splitlines()])  # pyright: ignore[reportArgumentType]
+    assert deleted_point_ids == expected_point_ids
+    # test records are removed, but doesn't nuke all records lol
+    result = RW5Parser(rw5_path=str_in, crdb_path=None, tzinfo=None).result
+    assert len(result.records) == 1
+    assert result.records[0].point_id == "5068"

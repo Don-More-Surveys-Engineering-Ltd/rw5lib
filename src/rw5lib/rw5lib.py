@@ -17,12 +17,12 @@ logger = logging.getLogger(__name__)
 
 class RW5Parser:
     machine_state: MachineState
-    rw5_path: Path
+    rw5_path: Path | str
     crdb_path: Path | None
     tzinfo: datetime.tzinfo
     result: RW5Result
 
-    def __init__(self, *, rw5_path: Path, crdb_path: Path | None, tzinfo: datetime.tzinfo | None) -> None:
+    def __init__(self, *, rw5_path: Path | str, crdb_path: Path | None, tzinfo: datetime.tzinfo | None) -> None:
         self.rw5_path = rw5_path
         self.crdb_path = crdb_path
         self.tzinfo = tzinfo or datetime.timezone.utc
@@ -33,8 +33,11 @@ class RW5Parser:
     def _parse(self) -> None:
         visited_point_ids: set[str] = set()
         # group file into record blocks
-        with self.rw5_path.open("r", encoding="iso8859-1") as input_file:
-            record_blocks = self._group_lines_into_record_blocks(input_file.readlines())
+        if isinstance(self.rw5_path, Path):
+            with self.rw5_path.open("r", encoding="iso8859-1") as input_file:
+                record_blocks = self._group_lines_into_record_blocks(input_file.readlines())
+        else:
+            record_blocks = self._group_lines_into_record_blocks(self.rw5_path.splitlines())
         for index, block in enumerate(record_blocks):
             record_code = block[0].split(",")[0].strip()
             if record_code in RECORD_CLASSES:
@@ -63,14 +66,14 @@ class RW5Parser:
             else:
                 logger.debug(f"No record class found for record code {record_code}.")
             # post record hooks
-            self._find_machine_state_changes(self.machine_state, block)  # type: ignore
-            self._find_point_deletions(block)
+            self._handle_machine_state_changes(self.machine_state, block)  # type: ignore
+            self._handle_point_deletions(block)
         # find total stations if crdb available
         if self.crdb_path:
             self.find_total_stations()
 
     @staticmethod
-    def _find_machine_state_changes(machine_state: MachineState, block: list[str]):
+    def _handle_machine_state_changes(machine_state: MachineState, block: list[str]):
         """Check record block for changes to the machine state.
 
         A change found in a block does not apply to the current shot, but the following.
@@ -113,14 +116,12 @@ class RW5Parser:
             if line.startswith(projection_prefix_2):
                 machine_state.projection = line.removeprefix(projection_prefix_2).strip()
 
-    def _find_point_deletions(self, block: list[str]):
-        """Find lines that indicate that a point was deleted from the CRDB or other points file.
-
-        If found, remove the point ids from our records.
-        """
+    @staticmethod
+    def _find_deleted_point_ids(block: list[str]) -> list[str]:
         point_deleted_prefix = "--Deleted Point ID(s):"
         # find lines indicating a point deletion
         deletion_lines = [line for line in block if line.startswith(point_deleted_prefix)]
+        print("!//", deletion_lines)
         # parse out ids
         deleted_ids: list[str] = []
         for line in deletion_lines:
@@ -128,6 +129,14 @@ class RW5Parser:
             if len(parts) > 0:
                 # the first item in split array should be the point id
                 deleted_ids.append(parts[0])
+        return deleted_ids
+
+    def _handle_point_deletions(self, block: list[str]):
+        """Find lines that indicate that a point was deleted from the CRDB or other points file.
+
+        If found, remove the point ids from our records.
+        """
+        deleted_ids = self._find_deleted_point_ids(block)
         # filter deleted records out of current list of records
         if len(deleted_ids) > 0:
             self.result.records = [r for r in self.result.records if r.point_id not in deleted_ids]
