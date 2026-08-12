@@ -121,7 +121,6 @@ class RW5Parser:
         point_deleted_prefix = "--Deleted Point ID(s):"
         # find lines indicating a point deletion
         deletion_lines = [line for line in block if line.startswith(point_deleted_prefix)]
-        print("!//", deletion_lines)
         # parse out ids
         deleted_ids: list[str] = []
         for line in deletion_lines:
